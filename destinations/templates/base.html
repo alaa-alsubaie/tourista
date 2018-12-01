@@ -10,18 +10,36 @@
   
   
   <!-- Uncomment the following line to include your custom CSS file -->
-  {% comment %} 
+  
     <link rel="stylesheet" type="text/css" href="{% static 'custom.css' %}"> 
-  {% endcomment %}
+  
 
   <title>{% block title %}{% endblock title %}</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body  class="color">
   
+  <div class="page-header text-center  ">
+  <p>Journeys around the world</p>
+  <h3>Discover .. Explore ..Share
+  </h3> 
+  <style>
+    h3 { 
+        display: block;
+        font-size: 0.56em;
+        margin-top: 0em;
+        margin-bottom: 0.06em;
+        margin-left: 0;
+        margin-right: 0;
+        font-family: serif;
+       
+    }
+</style>
+</div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'destination-list' %}">Tourista</a>
+  <nav class="navbar navbar-expand-lg navbar-light" style=" background-image: linear-gradient(to right, #b1d3f7  ,  #52ccc2 );">
+    <a class="navbar-brand" href="{% url 'destination-list' %}" style="font-size: 1.6em; color:#042573; font-weight: bold;font-family: serif;" >Tourista</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,7 +47,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'destination-create' %}">Add a destination</a>
+          <a class="nav-link" href="{% url 'destination-create' %}" style="font-size: 1.6em; color:#042573; font-weight: bold;font-family: serif;" >Add a destination</a>
         </li>
       </ul>
     </div>
@@ -37,11 +55,14 @@
   <!-- End Navbar -->
 
   <div class="container">
-    {% block content %} {% endblock content %}
+    {% block content %} 
+    {% endblock content %}
   </div>
 
   <!-- Add your bootstrap script tags here -->
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

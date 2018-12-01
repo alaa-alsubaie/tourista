@@ -1,0 +1,25 @@
+
+.color{
+	
+	background-image: linear-gradient(to right,  ##fff9d6 );
+}
+
+
+.page-header {
+ background-color: #b2b725f0;
+ color: white;
+ font-size: 4em;
+ margin-top: 0em;
+ margin-bottom: -0.08em;
+ font-weight: bold;
+ font-family: cursive;
+}
+
+.button2 {
+    background: #008CBA;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 4em;
+}
+
+
