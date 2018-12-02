@@ -3,9 +3,9 @@
 {% block title %}Detail{% endblock title %} 
 
 {% block content %}
-    <p style="margin-top: 1em; margin-bottom: -0.08em; font-size: 1.6em;  font-weight: bold; font-family: serif;">{{destination.name}}</p>
+    <p style="margin-top: 1em; margin-bottom: -0.08em; font-size: 1.6em;  font-weight: bold; font-family: serif; text-decoration: underline;">{{destination.name}}</p>
     <p style=" margin-top: 1em; margin-bottom: -0.08em; font-size: 1.6em; color:#256eb7; font-weight: bold;font-family: serif;">{{destination.description}}</p>
-    <p style="font-size: 1.6em; color:#256eb7; font-weight: bold;font-family: serif;">{{destination.activities}}</p>
+    <p style="font-size: 1.6em; color:#256eb7; font-weight: bold;font-family: serif; ">{{destination.activities}}</p>
     <p><img src="{{destination.pretty_picture.url}}" ></p>
     <p style="font-size: 1.6em; color:#042573; font-weight: bold;font-family: serif;">{{destination.optimal_visiting_season}} </p>
     <a href="{% url 'destination-update' destination.id %}" > 

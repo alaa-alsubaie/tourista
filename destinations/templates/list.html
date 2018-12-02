@@ -6,11 +6,13 @@
 <br>
 <div class="row">
   {% for destination in destinations %}
-	   <div class="card" style="width: 18rem;">
+	   <div class="card border-primary col-12 col-md-6 col-lg-3">
+
 	  <img  class="card-img-top img-adjusted" src="{{destination.pretty_picture.url}}" alt="Card image cap">
 	  <div class="card-body">
+	  	
 	    <h5 class="card-title" style="font-size: 1.6em; color:#042573; font-weight: bold;font-family: serif;" >{{destination.name}}</h5>
-	    <p class="card-text". style="font-size: 1.4em; font-weight: bold; color:#7d8204; font-family: serif; ">{{destination.activities}}</p>
+	    <p class="card-text" style="font-size: 1.4em; font-weight: bold; color:#7d8204; font-family: serif; ">{{destination.activities}}</p>
 	    <a href="{% url 'destination-detail' destination.id %}" class="btn btn-primary" style= "margin-bottom: 2.5em;">Read more</a>
 	  </div>
 </div>

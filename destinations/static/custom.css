@@ -17,9 +17,16 @@
 
 .button2 {
     background: #008CBA;
-    font-size: 28px;
+    font-size: 26px;
     color: white;
     margin-bottom: 4em;
+	width:150px;
+   font-family: serif
 }
 
+.border{
 
+	border-width:1.5px; }
+
+.destination_name{
+	}
